@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><title>QENEX · Endcard</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:#05060F;color:#fff;min-height:100vh;display:grid;place-items:center;padding:40px}
+.frame{position:relative}
+.cosmos{background:linear-gradient(135deg,#05060F 0%,#1E1B4B 35%,#4C1D95 70%,#7C3AED 100%)}
+.mono{font-family:'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6)}
+
+.frame{width:1920px;height:1080px;position:relative;background:radial-gradient(circle at 50% 50%,#1E1B4B 0%,#05060F 80%);display:grid;place-items:center;overflow:hidden}
+.frame::before{content:'';position:absolute;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.4),transparent 60%)}
+.center{position:relative;text-align:center;color:#fff;z-index:2}
+.center .tag{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.3em;color:#22D3EE;text-transform:uppercase;margin-bottom:32px}
+.center .url{font-size:28px;color:rgba(229,231,245,.7);margin-top:32px;font-family:'JetBrains Mono',monospace;letter-spacing:.1em}
+.tick{display:block;width:120px;height:3px;background:#22D3EE;margin:48px auto 0}
+.corner{position:absolute;font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.2em;text-transform:uppercase}
+.tl{top:40px;left:40px}.tr{top:40px;right:40px}.bl{bottom:40px;left:40px}.br{bottom:40px;right:40px}
+</style></head><body>
+<div class="frame">
+  <span class="corner tl">QX·END·01</span><span class="corner tr">© MMXXVI</span>
+  <span class="corner bl">QENEX SYSTEMS</span><span class="corner br">qenex.ai</span>
+  <div class="center">
+    <div class="tag">Thank you</div>
+    <span data-qenex-mark="cosmos" data-size="120"></span>
+    <div class="url">qenex.ai</div>
+    <span class="tick"></span>
+  </div>
+</div>
+<script src="../../styles/wordmark.js?v=10"></script>
+</body></html>

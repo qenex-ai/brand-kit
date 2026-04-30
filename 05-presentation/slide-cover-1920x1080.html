@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><title>QENEX · Slide Cover</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Space Grotesk',system-ui,sans-serif;background:#05060F;color:#fff;min-height:100vh;display:grid;place-items:center;padding:40px}
+.frame{position:relative}
+.cosmos{background:linear-gradient(135deg,#05060F 0%,#1E1B4B 35%,#4C1D95 70%,#7C3AED 100%)}
+.mono{font-family:'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase;font-size:11px;color:rgba(255,255,255,.6)}
+
+.slide{width:1920px;height:1080px;border-radius:8px;overflow:hidden;position:relative;box-shadow:0 80px 160px -60px rgba(0,0,0,.7)}
+.bg{position:absolute;inset:0;background:linear-gradient(135deg,#05060F 0%,#1E1B4B 30%,#4C1D95 65%,#7C3AED 100%)}
+.stars{position:absolute;inset:0}
+.stars i{position:absolute;width:2px;height:2px;background:#fff;border-radius:50%;opacity:.6}
+.content{position:relative;height:100%;padding:120px;display:flex;flex-direction:column;justify-content:space-between;color:#fff}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:.3em;color:#22D3EE;text-transform:uppercase}
+.title{font-size:120px;font-weight:500;letter-spacing:-.03em;line-height:1;margin-top:24px}
+.title .accent{color:#22D3EE}
+.sub{font-size:24px;color:rgba(229,231,245,.7);margin-top:32px;max-width:900px;line-height:1.4}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.15em;text-transform:uppercase}
+.tick{width:120px;height:3px;background:#22D3EE;margin-bottom:24px}
+</style></head><body>
+<div class="slide">
+  <div class="bg"></div>
+  <div class="stars" id="stars"></div>
+  <div class="content">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <span data-qenex-mark="cosmos" data-size="80"></span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(255,255,255,.55);letter-spacing:.15em">Q1 2026 · CONFIDENTIAL</span>
+    </div>
+    <div>
+      <div class="tick"></div>
+      <div class="eyebrow">PRESENTATION TITLE</div>
+      <div class="title">A leader in every<br/><span class="accent">digital field.</span></div>
+      <div class="sub">Subtitle copy. Replace with the actual subject of this deck — strategy, product, research, vision.</div>
+    </div>
+    <div class="foot"><span>QENEX SYSTEMS</span><span>qenex.ai</span><span>01 / 12</span></div>
+  </div>
+</div>
+<script>const s=document.getElementById('stars');for(let i=0;i<140;i++){const e=document.createElement('i');e.style.left=Math.random()*100+'%';e.style.top=Math.random()*100+'%';e.style.opacity=(0.2+Math.random()*0.6).toFixed(2);e.style.width=e.style.height=(0.8+Math.random()*1.6).toFixed(1)+'px';s.appendChild(e)}</script>
+<script src="../../styles/wordmark.js?v=10"></script>
+</body></html>
